@@ -1,0 +1,58 @@
+
+//Electric Blue Lemonade (#0063B2FF) and Aquamarine (#9CC3D5FF)
+
+//  Island Green (#2BAE66FF) and White (#FCF6F5FF)
+
+// Dark Green (#006B38FF) and Black (#101820FF)
+
+/* try 1st Orange (#F95700FF) and White (#FFFFFFFF) */
+
+// Powdered Sugar (#F1F4FFFF) and Silver (#A2A2A1FF)
+
+.navbar{
+  background-color: #F1F4FFFF;
+
+}
+.navbar a.navbar-brand img{
+  width: 150px;
+  margin: 0 20px;
+}
+
+.navbar ul li a{
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  z-index: 1111111;
+}
+.navbar ul li{
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.navbar ul li::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F95700FF;
+  transition: 0.5s;
+  z-index: 11;
+}
+.navbar ul li:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F95700FF;
+  color: #fff;
+}
+.navbar ul li:hover a{
+  color: #fff;;
+}
+.navbar ul li:hover::after a{
+  position: relative;
+  z-index: 1111111;
+}
+
