@@ -4,8 +4,31 @@ html,body{
   font-family: "Alegreya", serif;
 }
 .btn-main{
-  background-color: #F95700FF;
   color: #fff;
+  // background-color: #5816f2;
+  background-color: #102159;    // color combo with bg is this #32a0ff
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
   width: max-content;
-  border-radius: 50%;
+  font-size: 0.85rem;
+}
+.text-main{
+  color:  #32a0ff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+h6,
+small,
+p{
+  color: #565656;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.title{
+  font-size: 3rem;
+  font-weight: 500;
+  color: #102159;
+  padding: 20px 0;
 }

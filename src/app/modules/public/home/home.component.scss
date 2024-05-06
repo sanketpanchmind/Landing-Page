@@ -1,32 +1,300 @@
-section{
-  padding-block: 2rem;
+section {
+  padding: 100px 0;
 }
+
 #banner_content {
   height: 70vh;
   width: 100%;
   padding: 0;
 }
-#banner_content .banner_title{
+
+#banner_content .banner_title {
   font-size: 4rem;
   font-weight: 500;
   text-align: center;
+  line-height: 1.3;
 }
-#banner_content .cctv-img{
+
+#banner_content .cctv-img {
   position: absolute;
   top: 0;
   right: 0px;
   width: 250px;
   animation: updown 4s infinite both;
 }
+
 @keyframes updown {
-  0%{
-    transform: translate3d(0,0,0);
+  0% {
+    transform: translate3d(0, 0, 0);
   }
-  50%{
-    transform: translate3d(0,20px,0);
+
+  50% {
+    transform: translate3d(0, 20px, 0);
 
   }
-  100%{
-    transform: translate3d(0,0,0);
+
+  100% {
+    transform: translate3d(0, 0, 0);
   }
+}
+
+
+
+// staq_at_glance
+.staq_at_glance {
+  background-color: #f7fbff;
+}
+
+.staq_at_glance .card .card-body {
+  padding: 40px 20px;
+  height: 100%;
+}
+
+.staq_at_glance .card .card-body .fa-solid {
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 24px;
+  transition: 0.5s ease-in-out;
+  color: #32a0ff;
+}
+
+.staq_at_glance .card:hover {
+  box-shadow: var(--bs-box-shadow) !important;
+  margin-top: -5px;
+  transition: 0.5s;
+}
+
+.staq_at_glance .card:hover .card-body .fa-solid {
+  // background-color:  #32a0ff;
+  background: linear-gradient(360deg, rgba(16, 33, 89, 1) 0%, rgba(50, 160, 255, 1) 100%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 24px;
+  transition: 0.5s ease-in-out;
+}
+
+// end
+
+// what_is_charlie
+.what_is_charlie span.info-icon {
+  background-color: #102159;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.what_is_charlie .carousel .carousel-inner .carousel-item img {
+  height: 450px;
+  width: 100%;
+}
+
+.what_is_charlie button .fa-solid {
+  display: none;
+  transition: 1s ease-in-out;
+}
+
+.what_is_charlie button:hover .fa-solid {
+  display: inline-block;
+  padding: 0 3px;
+  transition: 1s ease-in-out;
+}
+
+.what_is_charlie {
+  position: relative;
+}
+
+.what_is_charlie .half-ring-shape {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  animation: motionring 5s infinite both;
+}
+
+@keyframes motionring {
+  0% {
+    transform: translate(40px) rotate(72deg);
+  }
+
+  20% {
+    transform: translate(40px, 0) rotate(144deg);
+  }
+
+  40% {
+    transform: translate(80px, 40px) rotate(288deg);
+  }
+
+  60% {
+    transform: translate(40px, 80px) rotate(360deg)
+  }
+
+  80% {
+    transform: translate(-40px, 80px) rotate(432deg);
+  }
+
+  100% {
+    transform: translate(0px) rotate(0);
+  }
+}
+
+//
+
+// charlie_anlytics_software
+.charlie_anlytics_software {
+  background-color: #f7fbff;
+}
+
+
+.charlie_anlytics_software .card .card-body {
+  padding: 20px 30px;
+}
+
+.charlie_anlytics_software .card .card-body img {
+  width: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.charlie_anlytics_software .card:hover img {
+  background: linear-gradient(360deg, rgba(16, 33, 89, 1) 0%, rgba(50, 160, 255, 1) 100%);
+  transition: 0.5s ease-in-out;
+}
+
+.charlie_anlytics_software .card:hover {
+  // box-shadow: var(--bs-box-shadow)!important;
+  margin-top: -10px;
+  transition: 0.2s ease-in-out;
+}
+
+.charlie_anlytics_software {
+  position: relative;
+}
+
+.charlie_anlytics_software .half-ring-shape {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  animation: motionring 5s infinite;
+}
+
+.charlie_anlytics_software .cross-shape {
+  position: absolute;
+  top: 15%;
+  right: 7%;
+  font-size: 1.5rem;
+  color: #32a0ff;
+  animation: crossrotate 5s infinite both;
+}
+
+@keyframes crossrotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+// end
+
+// charlie platform
+.charlie_platform {
+  position: relative;
+}
+
+.charlie_platform .card {
+  background: transparent;
+  border: 0;
+}
+
+.charlie_platform .card-header {
+  background: transparent;
+  border: 0;
+}
+
+.charlie_platform .card_title {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.charlie_platform .cross-shape {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: #32a0ff;
+  animation: crossrotate 5s infinite both;
+}
+
+.charlie_platform .circle-img {
+  width: 100px;
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  background-color: #d4ebffa6;
+  padding: 5px;
+  border-radius: 50%;
+  animation: crossrotate 10s infinite both;
+}
+
+//
+
+
+
+
+
+
+@media only screen and (max-width:479px) {
+  #banner_content .robo-laptop-img {
+    width: 200px;
+  }
+
+  #banner_content .cctv-img {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 150px;
+    animation: updown 4s infinite both;
+  }
+  #banner_content .banner_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+}
+.staq_at_glance {
+  background-color: #f7fbff;
+  padding-top: 200px;
+}
+.staq_at_glance .card{
+  margin: 10px 0;
+}
+.title{
+  font-size: 2rem;
+}
+.charlie_platform .circle-img {
+  width: 100px;
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  background-color: rgba(212, 235, 255, 0.6509803922);
+  padding: 5px;
+  border-radius: 50%;
+  animation: _ngcontent-ng-c1363679610_crossrotate 10s infinite both;
+}
+.charlie_platform .cross-shape {
+  position: absolute;
+  top: 39%;
+  left: 0%;
+  font-size: 1.5rem;
+  color: #32a0ff;
+  animation: _ngcontent-ng-c1363679610_crossrotate 5s infinite both;
+}
 }
