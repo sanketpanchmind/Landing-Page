@@ -1,0 +1,105 @@
+.footer {
+  // background: linear-gradient(360deg, rgba(16, 33, 89, 1) 0%, rgba(50, 160, 255, 1) 100%);
+  background-image: url('https://bariton-react.envytheme.com/images/home-six/footer/shape-1.png');
+  background-color: #102159;
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.rounded-shape-img{
+  position: absolute;
+  top: 0;
+  width: 80px;
+  animation: rounded-shape-img-rotate 20s infinite;
+}
+@keyframes rounded-shape-img-rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
+
+.socia-media-links .fa-brands {
+  background-color: #32a0ff;
+  color: #102159;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 12px 10px;
+  transition: 0.2s ease-in-out;
+
+}
+
+.socia-media-links .fa-brands:hover {
+  // background-color: #102159;
+  // color: #32a0ff;
+  background-color: #32a0ff;
+  color: #fff;
+  margin-top: -5px;
+  transition: 0.2s ease-in-out;
+}
+
+.footer_title img {
+  width: 200px;
+}
+
+.footer_title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 500;
+}
+
+.footer_other_titles {
+  position: relative;
+}
+
+.footer_other_titles::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 2px;
+  background-color: #32a0ff;
+}
+
+.contact_us_title {
+  padding-right: 20px;
+}
+
+.contact_map_img {
+  position: absolute;
+  right: 210px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 479px) {
+  .contact_map_img {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    bottom: 0;
+  }
+  .rounded-shape-img {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    right: 10%;
+    animation: rounded-shape-img-rotate 20s infinite;
+}
+}
