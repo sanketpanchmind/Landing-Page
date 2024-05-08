@@ -1,0 +1,220 @@
+section{
+  padding: 100px 0;
+}
+.banner-img{
+  animation: motion-up-down 10s infinite;
+}
+@keyframes motion-up-down{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+#aboutus_banner .banner_title{
+  font-size: 4rem;
+}
+#aboutus_banner button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  transition: 1s ease-in-out;
+
+}
+#aboutus_banner button .fa-solid{
+  display: none;
+  transition: 1s ease-in-out;
+}
+#aboutus_banner button:hover .fa-solid{
+  display: inline-block;
+  transition: 1s ease-in-out;
+}
+
+
+// what_is_charlie
+.what_is_charlie{
+  background-color: #F7FBFF;
+  position: relative;
+}
+.what_is_charlie .half-ring-img{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  animation: half-ring-motion 20s infinite;
+}
+.what_is_charlie .cross-img-bottom{
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  animation: rotate 5s infinite;
+}
+.what_is_charlie .badge_text{
+  background-color: #32a0ff;
+  color: #fff;
+  width: max-content;
+  padding: 5px 25px;
+  border-radius: 50px;
+}
+//
+
+// advantages
+.advantages{
+  position: relative;
+}
+.advantages .cross-img{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: rotate 4s infinite;
+}
+.advantages .net-ring-img{
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  animation: half-ring-motion 20s infinite;
+}
+.advantages .card{
+  border: none;
+  position: relative;
+  transition: 1s ease-in-out;
+
+}
+.advantages .card .card-body .card_title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #102159;
+}
+.advantages .card .card-body{
+  padding: 20px 25px;
+}
+.advantages .card .card-body .card_description p{
+  text-align: justify;
+}
+.advantages .card .card-body img{
+  width: 80px;
+  background: linear-gradient(360deg, rgba(16, 33, 89, 1) 0%, rgba(50, 160, 255, 1) 100%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.advantages .card .learn_more a{
+  text-decoration: none;
+  color: #fff;
+}
+.advantages .card .learn_more{
+  font-size: 0.85rem;
+  content: "";
+  position: absolute;
+  right: -100px;
+  bottom: -50px;
+  background-color: #102159;
+  width: fit-content;
+  height: 50px;
+  padding: 15px 20px;
+  transition: 0.5s ease-in-out;
+}
+.advantages .card:hover .learn_more{
+  font-size: 0.85rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #102159;
+  width: fit-content;
+  height: 50px;
+  padding: 15px 20px;
+  transition: 0.5s ease-in-out;
+}
+.advantages .card:hover .learn_more a{
+  text-decoration: none;
+  color: #fff;
+}
+// end
+
+
+// analytics_software
+.analytics_software{
+  position: relative;
+  background-color: #F7FBFF;
+}
+.analytics_software .vector-half-shape{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  animation: vector-rotate 7s infinite;
+}
+.analytics_software .half-ring-img{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    animation: half-ring-motion 25s infinite;
+}
+
+// end
+
+.rotateimg{
+  animation: rotate 4s infinite;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes vector-rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotateY(360deg)
+  }
+}
+
+@keyframes half-ring-motion{
+  0%{
+    transform:translate(-140px, -70px) rotate(0);
+  }
+  20%{
+    transform: translate(70px, 0) rotate(72deg);
+  }
+  40%{
+    transform: translate(140px, 70px) rotate(144deg);
+  }
+  60%{
+    transform: translate(-70px, 140px) rotate(288deg);
+  }
+  80%{
+    transform: translate(-140px, 140px) rotate(460deg);
+  }
+  100%{
+    transform: translate(-140px, -70px) rotate(920deg);
+  }
+}
+
+
+
+@media only screen and (max-width: 479px){
+
+  .banner_title {
+    font-size: 2rem !important;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 0.85rem;
+  }
+  .advantages .cross-img{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    animation: rotate 4s infinite;
+}
+}

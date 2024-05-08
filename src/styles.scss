@@ -19,6 +19,14 @@ html,body{
   text-decoration: underline;
   font-weight: 500;
 }
+.badge_text{
+  background-color: #32a0ff;
+  color: #fff;
+  width: max-content;
+  padding: 5px 25px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+}
 h6,
 small,
 p{
@@ -32,3 +40,4 @@ p{
   color: #102159;
   padding: 20px 0;
 }
+
