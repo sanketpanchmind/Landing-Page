@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '', component: PublicComponent, loadChildren: () => import('./layouts/public/public.module').then(m => m.PublicModule) },
   { path: 'home', loadChildren: () => import('./modules/public/home/home.module').then(m => m.HomeModule) },
-  { path: 'aboutus', loadChildren: () => import('./modules/public/aboutus/aboutus.module').then(m => m.AboutusModule) }];
+  { path: 'aboutus', loadChildren: () => import('./modules/public/aboutus/aboutus.module').then(m => m.AboutusModule) },
+  { path: 'contactus', loadChildren: () => import('./modules/public/contactus/contactus.module').then(m => m.ContactusModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
